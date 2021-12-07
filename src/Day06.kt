@@ -40,6 +40,7 @@ fun main() {
             original = newCopy.filter { it.key >= 0 }
             newCopy = mutableMapOf()
         }
+
         return original.values.map { it }.sum()
     }
 
