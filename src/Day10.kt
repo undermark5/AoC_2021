@@ -118,10 +118,4 @@ fun main() {
     println(part2(input))
 }
 
-private fun <E> MutableList<E>.push(c: E) {
-    this.add(0, c)
-}
 
-private fun <E> MutableList<E>.pop(): E {
-    return this.removeAt(0)
-}

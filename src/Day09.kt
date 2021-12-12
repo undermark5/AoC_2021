@@ -115,6 +115,4 @@ fun main() {
     println(part2(input))
 }
 
-private fun <E> MutableList<E>.pop(): E = this.removeAt(0)
-
 
