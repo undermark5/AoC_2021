@@ -1,6 +1,7 @@
 import java.io.File
 import java.math.BigInteger
 import java.security.MessageDigest
+import java.util.*
 
 /**
  * Reads lines from the given input txt file.
@@ -19,3 +20,5 @@ fun <E> MutableList<E>.push(c: E) {
 fun <E> MutableList<E>.pop(): E {
     return this.removeAt(0)
 }
+
+data class MutablePair<T, O>(var first: T, var second: O)
