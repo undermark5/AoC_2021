@@ -21,4 +21,8 @@ fun <E> MutableList<E>.pop(): E {
     return this.removeAt(0)
 }
 
+fun <E> MutableList<E>.peek(): E {
+    return this.first()
+}
+
 data class MutablePair<T, O>(var first: T, var second: O)
