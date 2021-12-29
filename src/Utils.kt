@@ -26,3 +26,8 @@ fun <E> MutableList<E>.peek(): E {
 }
 
 data class MutablePair<T, O>(var first: T, var second: O)
+
+fun String.toIntRange():IntRange {
+    val split = this.split("..")
+    return split.first().toInt()..split.last().toInt()
+}
