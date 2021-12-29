@@ -96,8 +96,3 @@ fun main() {
     println(part1(input))
     println(part2(input))
 }
-
-private operator fun <R> (() -> R).times(paddingSize: Int): List<R> {
-    val value = this()
-    return MutableList(paddingSize) { value }
-}

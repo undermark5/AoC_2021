@@ -31,3 +31,8 @@ fun String.toIntRange():IntRange {
     val split = this.split("..")
     return split.first().toInt()..split.last().toInt()
 }
+
+operator fun <R> (() -> R).times(paddingSize: Int): List<R> {
+    val value = this()
+    return MutableList(paddingSize) { value }
+}
